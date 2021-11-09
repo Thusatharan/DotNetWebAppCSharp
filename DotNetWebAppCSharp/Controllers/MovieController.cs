@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotNetWebAppCSharp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,13 @@ namespace DotNetWebAppCSharp.Controllers
     public class MovieController : Controller
     {
         // GET: Movie
-        public ActionResult Index()
+        public ActionResult Random()
         {
-            return View();
+            var movies = new Movie()
+            {
+                Name = "Avengers"
+            };
+            return View(movies);
         }
     }
 }
