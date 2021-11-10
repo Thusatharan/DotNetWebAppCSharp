@@ -14,7 +14,7 @@ namespace DotNetWebAppCSharp.Controllers
         {
             var movies = new Movie()
             {
-                Name = "Avengers"
+                Name = "Avengers End Game!"
             };
             return View(movies);
         }
